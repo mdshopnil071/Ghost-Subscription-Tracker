@@ -100,3 +100,53 @@ footer {
   from { transform: translateY(0); }
   to   { transform: translateY(140vh); }
 }
+
+/* SUMMARY CARDS */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.summary-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-purple);
+  box-shadow: 0 8px 30px rgba(164, 139, 255, 0.5);
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.ghost-card {
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+.ghost-card .summary-value {
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+}

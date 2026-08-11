@@ -17,6 +17,26 @@
     <p class="tagline">Never let a forgotten subscription drain your wallet again</p>
   </header>
 
+  <!-- ===== SUMMARY DASHBOARD ===== -->
+<section class="summary-grid">
+  <div class="summary-card">
+    <span class="summary-label">Active Subscription</span>
+    <span class="summary-value" id="totalCount">0</span>
+  </div>
+  <div class="summary-card">
+    <span class="summary-label">Monthly Total</span>
+    <span class="summary-value">৳<span id="monthlyTotal">0</span></span>
+  </div>
+  <div class="summary-card">
+    <span class="summary-label">Yearly Total</span>
+    <span class="summary-value">৳<span id="yearlyTotal">0</span></span>
+  </div>
+  <div class="summary-card ghost-card">
+    <span class="summary-label">Wasted Money 👻</span>
+    <span class="summary-value" id="wastedTotal">৳0</span>
+  </div>
+</section>
+
   <!-- CARDS CONTAINER -->
   <section class="cards-grid" id="cardsContainer"></section>
   <p class="empty-msg" id="emptyMsg">No subscriptions added yet!</p>
