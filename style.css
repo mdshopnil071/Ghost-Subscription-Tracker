@@ -150,3 +150,66 @@ footer {
 @media (max-width: 768px) {
   .summary-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* FORM SECTION */
+.form-section {
+  max-width: 1000px;
+  margin: 34px auto;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid var(--border-color);
+}
+
+.form-section h2 {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  color: var(--accent-purple);
+}
+
+#subForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+#subForm input,
+#subForm select {
+  background: rgba(10, 14, 26, 0.6);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+#subForm input:focus,
+#subForm select:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+#subForm button {
+  grid-column: span 2;
+  background: linear-gradient(90deg, #a48bff, #7c6ae8);
+  color: #0a0e1a;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #subForm { grid-template-columns: 1fr; }
+  #subForm button { grid-column: span 1; }
+}
