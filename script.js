@@ -1,0 +1,1 @@
+console.log("Ghost Subscription Tracker Initialized");

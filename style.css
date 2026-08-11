@@ -1,0 +1,62 @@
+:root {
+  --bg-dark: #0a0e1a;
+  --bg-gradient: linear-gradient(135deg, #0a0e1a 0%, #131a2e 50%, #0d1220 100%);
+  --bg-card: rgba(26, 33, 51, 0.6);
+  --accent-purple: #a48bff;
+  --text-main: #eef0fb;
+  --text-dim: #8890ac;
+  --border-color: rgba(164, 139, 255, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 0 16px 40px;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  padding: 50px 0 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ghost-icon {
+  font-size: 2.4rem;
+}
+
+.app-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a48bff, #5ee6d6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-top: 60px;
+}
